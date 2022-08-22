@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-22T08:28:08.687Z",
+    "end": "2022-08-22T08:28:22.140Z",
+    "duration": 13453,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "681d3b23-3167-4ac2-972a-3f965287ccff",
+      "title": "",
+      "fullFile": "cypress/e2e/previewAad.cy.js",
+      "file": "cypress/e2e/previewAad.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e777f2dd-e4b5-40ce-ac8c-82c0655f81d7",
+          "title": "Preview the ad",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logins to the account, navigates, add the description",
+              "fullTitle": "Preview the ad Logins to the account, navigates, add the description",
+              "timedOut": null,
+              "duration": 12394,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.njuskalo.hr/');\ncy.xpath(\"//a[normalize-space()='Prijava']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='login_username']\").type('ajdi15', {\n  force: true\n});\ncy.xpath(\"//input[@id='login_password']\").type('tester12345', {\n  force: true\n});\ncy.xpath(\"//button[@id='login_login']\").click({\n  force: true\n}); // creating a new add\n// choosing to post \ncy.xpath(\"//a[@class='BaseEntitySubmitAction BaseEntitySubmitCoreCTA-action button-standard button-standard--alpha']\").click({\n  force: true\n}); //choosing the requested selection \ncy.xpath(\"//label[normalize-space()='Auto Moto']\").click({\n  force: true\n});\ncy.xpath(\"//label[normalize-space()='Gospodarska vozila']\").click({\n  force: true\n});\ncy.xpath(\"//label[@for='submitCategorySelectorLevelCategory12775']\").click({\n  force: true\n});\ncy.xpath(\"//button[@class='form-action form-action--submit button-standard button-standard--alpha SubmitCategorySelector-submit']\").click({\n  force: true\n}); //choosing the package \ncy.xpath(\"//div[@class='ProductSelectTable-cta']//input[@id='submit-button-01']\").click({\n  force: true\n}); //adding the description\ncy.xpath(\"//select[@id='ad-condition_id']\").select('novo', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-modelName']\").type('VW', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-yearManufactured']\").type('2000', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-motorTypeId']\").select('benzinski', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-mileage']\").type('3000', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-modelYear']\").type('2000', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-motorSize']\").type('2000', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-motorPower']\").type('2000', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-ownerCountId']\").select('drugi', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-registrationExpiryTs']\").select('08/2022', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-transmissionType']\").select('automatski', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-vehicleSeatCount']\").type('3', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-firstRegistrationYear']\").type('2019', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-guaranteeTypeId']\").select('1 godina', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-ecoStandardTypeId']\").select('Euro 1', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-airconditionTypeId']\").select('dvojna', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-serviceBook']\").click({\n  force: true\n});\ncy.xpath(\"//select[@id='ad-colorId']\").select('crna', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-metallicColor']\").click({\n  force: true\n}); // adding the additional  options \ncy.xpath(\"//input[@id='ad-vehicleEquipment_ksenon svjetla']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='ad-vanSafetyFeatures_ABS']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='ad-vanComfortFeatures_tempomat']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='ad-paymentOptions_12']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='ad-paymentOptions_341']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='ad-paymentOptions_342']\").click({\n  force: true\n});\ncy.xpath(\"//select[@id='ad-vanRadioTypeId']\").select('CD', {\n  force: true\n});\ncy.xpath(\"//select[@id='ad-vanAirbagType']\").select('vozački', {\n  force: true\n}); //addint the third addition to the description \ncy.xpath(\"//input[@id='ad-title']\").type('VW', {\n  force: true\n});\ncy.xpath(\"//textarea[@id='ad-description']\").type('VW na prodaju', {\n  force: true\n});\ncy.xpath(\"//input[@id='ad-enteredPrice-amount']\").type('30000', {\n  force: true\n});\ncy.xpath(\"//button[normalize-space()='Dohvati moju lokaciju']\").click({\n  force: true\n});\ncy.xpath(\"//select[@id='adLocalitySelector-location_id_level_0']\").select('Bjelovarsko-bilogorska', {\n  force: true\n});\ncy.xpath(\"//select[@id='adLocalitySelector-location_id_level_1']\").select('Berek', {\n  force: true\n});\ncy.xpath(\"//select[@id='adLocalitySelector-location_id_level_2']\").select('Berek', {\n  force: true\n}); // cy.xpath(\"//input[@id='item_file_10']\").click({force:true}) if photos are offline and ready to upload\ncy.xpath(\"//input[@id='ad-youtube_url']\").type('wwww/youtube/com', {\n  force: true\n}); // publishing and moving forward\n// cy.xpath(\"//button[@id='ad-submitButton']\").click({force:true})",
+              "err": {},
+              "uuid": "6618fc97-2c28-45e3-b35a-60ebbe47a757",
+              "parentUUID": "e777f2dd-e4b5-40ce-ac8c-82c0655f81d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6618fc97-2c28-45e3-b35a-60ebbe47a757"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12394,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
