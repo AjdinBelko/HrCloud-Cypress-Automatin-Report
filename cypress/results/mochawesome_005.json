@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-22T09:23:45.508Z",
+    "end": "2022-08-22T09:23:54.471Z",
+    "duration": 8963,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c0e82a09-72df-4d4c-8880-26b8558373cf",
+      "title": "",
+      "fullFile": "cypress/e2e/desiredSearch.cy.js",
+      "file": "cypress/e2e/desiredSearch.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "69a8c8f0-4804-4944-8ae7-9361f9346aaa",
+          "title": "Visit the URL & Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logins to the account",
+              "fullTitle": "Visit the URL & Login Logins to the account",
+              "timedOut": null,
+              "duration": 3302,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.njuskalo.hr/');\ncy.xpath(\"//a[normalize-space()='Prijava']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='login_username']\").type('ajdi15', {\n  force: true\n});\ncy.xpath(\"//input[@id='login_password']\").type('tester12345', {\n  force: true\n});\ncy.xpath(\"//button[@id='login_login']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "c2bf49b3-fab9-4795-956a-8314601d501c",
+              "parentUUID": "69a8c8f0-4804-4944-8ae7-9361f9346aaa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Searches for the product, desired option",
+              "fullTitle": "Visit the URL & Login Searches for the product, desired option",
+              "timedOut": null,
+              "duration": 4639,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath(\"//a[@href='/auto-moto']\").click({\n  force: true\n});\ncy.xpath(\"//a[@href='/gospodarska-vozila']\").click({\n  force: true\n});\ncy.xpath(\"//a[normalize-space()='Autobusi']\").click({\n  force: true\n});\ncy.xpath(\"//input[@id='modelName']\").type('Man', {\n  force: true\n});\ncy.xpath(\"//input[@id='GeoLocationSelector-autoComplete']\").type('Zagreb', {\n  force: true\n}).click({\n  force: true\n});\ncy.xpath(\"//select[@id='transmissionType']\").select('automatski', {\n  force: true\n});\ncy.xpath(\"//select[@id='motorTypeId']\").select('plin', {\n  force: true\n});\ncy.xpath(\"//button[@id='submitButton']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "1e1f31ab-f47e-46c7-a3c6-7046aafd3449",
+              "parentUUID": "69a8c8f0-4804-4944-8ae7-9361f9346aaa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c2bf49b3-fab9-4795-956a-8314601d501c",
+            "1e1f31ab-f47e-46c7-a3c6-7046aafd3449"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7941,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
